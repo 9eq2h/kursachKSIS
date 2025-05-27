@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222;
+        }
+
+        h1, h2 {
+            color: #c00;
+            margin-top: 1.2em
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 8px 0
+        }
+
+        td, th {
+            border: 1px solid #aaa;
+            padding: 4px 8px;
+            text-align: center
+        }
+
+        .card {
+            font-weight: bold
+        }
+
+        .red {
+            color: #ff5555
+        }
+
+        .blue {
+            color: #5555ff
+        }
+
+        .green {
+            color: #55aa55
+        }
+
+        .yellow {
+            color: #ffaa00
+        }
+    </style>
+</head>
+<body>
+
+<h1>UNO – краткие правила</h1>
+
+<p><b>Цель игры</b> – первым избавиться от всех карт в руке и набрать очки за&nbsp;карты,
+    оставшиеся у соперников.</p>
+
+<h2>Состав колоды (108&nbsp;карт)</h2>
+<table>
+    <tr>
+        <th>Тип</th>
+        <th>Количество</th>
+        <th>Примечание</th>
+    </tr>
+    <tr>
+        <td class="card red">0-9</td>
+        <td>76</td>
+        <td>по&nbsp;2&nbsp;карты каждого номера и&nbsp;цвета, кроме&nbsp;«0» (по&nbsp;1)</td>
+    </tr>
+    <tr>
+        <td class="card yellow">Skip (⛔)</td>
+        <td>8</td>
+        <td>по&nbsp;2 каждого цвета</td>
+    </tr>
+    <tr>
+        <td class="card green">Reverse (↺)</td>
+        <td>8</td>
+        <td>по&nbsp;2 каждого цвета</td>
+    </tr>
+    <tr>
+        <td class="card blue">Draw Two (+2)</td>
+        <td>8</td>
+        <td>по&nbsp;2 каждого цвета</td>
+    </tr>
+    <tr>
+        <td class="card">Wild (смена цвета)</td>
+        <td>4</td>
+        <td>без цвета</td>
+    </tr>
+    <tr>
+        <td class="card">Wild Draw Four (+4)</td>
+        <td>4</td>
+        <td>без цвета</td>
+    </tr>
+</table>
+
+<h2>Подготовка</h2>
+<ol>
+    <li>Каждому игроку раздаётся <b>по&nbsp;7 карт</b>.</li>
+    <li>Оставшаяся колода кладётся рубашкой вниз; верхняя карта переворачивается – это
+        стартовая <i>верхняя карта</i>.
+    </li>
+    <li>Ход начинает игрок выбранный случайно.</li>
+</ol>
+
+<h2>Ход игрока</h2>
+<ul>
+    <li>Вы должны положить карту, у которой <b>цвет <u>или</u> значение</b>
+        совпадает с верхней картой стопки.<br>
+        <i>Пример:</i> на&nbsp;«синюю 7» можно сыграть любую синюю карту или любую «7».
+    </li>
+    <li>Если подходящей карты нет, берите из колоды
+        до первой, которую можно сыграть; её можно сыграть сразу же.
+    </li>
+    <li>Если карта сыграна, она становится новой верхней картой. Затем ход переходит
+        к следующему игроку (с учётом эффектов карт).
+    </li>
+</ul>
+
+<h2>Карта-действие</h2>
+<table>
+  <tr><th>Карта</th><th>Эффект</th></tr>
+
+  <tr>
+    <td>
+      <img src="assets/cards/red/skip.svg"
+           alt="Skip"   width="60" height="95">
+    </td>
+    <td>Следующий игрок пропускает ход.</td>
+  </tr>
+
+  <tr>
+    <td>
+      <img src="assets/cards/green/reverse.svg"
+           alt="Reverse" width="60" height="95">
+    </td>
+    <td>Меняет направление хода.<br>
+        При игре вдвоём работает как <i>Skip</i>.
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <img src="assets/cards/blue/draw-two.svg"
+           alt="+2" width="60" height="95">
+    </td>
+    <td>Следующий игрок берёт 2&nbsp;карты и&nbsp;пропускает ход.</td>
+  </tr>
+
+  <tr>
+    <td>
+      <img src="assets/cards/black/wild.svg"
+           alt="Wild" width="60" height="95">
+    </td>
+    <td>Игрок объявляет любой цвет (красный/синий/жёлтый/зелёный);
+        ход переходит дальше.</td>
+  </tr>
+
+  <tr>
+    <td>
+      <img src="assets/cards/black/draw-four.svg"
+           alt="+4" width="60" height="95">
+    </td>
+    <td>Объявите цвет; следующий игрок берёт 4&nbsp;карты и&nbsp;пропускает ход.<br>
+
+    </td>
+  </tr>
+</table>
+
+<h2>Завершение раунда</h2>
+<p>Раунд заканчивается, когда кто-то выкладывает последнюю карту.</p>
+<h2>Важные моменты</h2>
+<ul>
+    <li>Если колода закончилась, перемешка сброса (кроме верхней карты) и образование новой колоды не будет.</li>
+</ul>
+
+<hr>
+<p style="text-align:center;font-size:90%">© UNO™ Mattel.</p>
+</body>
+</html>
